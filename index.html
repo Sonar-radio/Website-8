@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <head> <center><h1>a name </h1></center></head>
+    <nav>
+        <center>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About Us.html">About us</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Nutrition.html">Nutrition</a></li>
+                <li><a href="Our team.html">Our team</a></li>
+                <li><a href="About this site.html">About This Site</a></li>
+            </ol>
+        </center>
+    </nav>
+    <div class="Horizontallinenav"></div>
+    <!-- Check us out -->
+    <div class="Checkusout"> <center>
+    <div>     <p class="Checkus">Check us Out!</p>
+            <div class="Tastemore">Taste more</div>
+    <div> </center>
+    </div>
+    
+    
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="July20_Pecan-and-Cinnamon-Scrolls-976x549.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="Snapseed(3).jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="Bubble-Waffle-Dessert-Advisor-scaled.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <script>
+      let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
+  <!-- Prudct holder -->
+ <div class="Products">
+  <a><div class="Buttonalign"><button type="button" onclick="link" class="buttontoproduct"><p class="Texttoproducts">Go To Product ⮞</p></button></a></div>
+      <div class="Productholder">
+       
+        <div class="Product1">
+            Hi
+        </div>
+        <div class="Product1">
+            Hi
+        </div>
+        <div class="Product1">
+            Hi
+        </div>
+        <div class="Product1">
+            Hi
+        </div>
+      </div>
+      
+      <div class="Productholder">
+        <div class="Product1">
+            Hi
+        </div>
+        <div class="Product1">
+            Hi
+        </div>
+        <div class="Product1">
+            Hi
+        </div>
+        <div class="Product1">
+            Hi
+        </div>
+ </div>
+    
+    <!-- Our story -->
+    <div class="Ourstory">
+        <center>
+            <p class="Whoweare">Who we are</p>
+            <p class="our">our story</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsam molestiae, repellendus voluptates quos quis! Iure similique ea impedit ducimus dolor voluptatem corrupti. Sunt, dolorem. Iusto numquam magni natus architecto inventore eveniet eos nisi et molestiae libero. Vel officiis illo maiores quidem magni! Ea accusantium, voluptates odio id eaque nulla.
+        </center>
+       
+    </div>
+    <div class="Ourstoryimage"> <img src="Baking.jpg" alt="" class="Bakingperson"></div>
+</body>
+</html>

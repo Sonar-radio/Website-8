@@ -1,0 +1,204 @@
+body{
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Header */
+/* Navigation list */
+
+nav{
+    clear: both;
+}
+nav ol{
+    display: flex;
+    justify-content: space-around;
+    
+}
+nav li {
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    background-color: gray;
+    border-radius: 2px;
+}
+
+/* Horizontal line under nav */
+.Horizontallinenav{
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: black;
+  margin-top: 5px;
+  }
+
+    /* Check us out */
+.Checkusout{
+    background-color:  rgb(255, 247, 248);
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+}
+.Checkus{
+    font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+    margin-bottom: 0;
+    margin: 10px;
+}
+.Tastemore{
+    width: 100%;
+    height: 100%;
+}
+
+/* Front page image carousel */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* Product div holder */
+.Products{
+  background-color: rgb(255, 247, 248);
+  padding: 5px; 
+}
+.Productholder{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+.Buttonalign{
+margin-top: 5px;
+text-align: right;
+}
+.buttontoproduct{
+  background-color: rgb(255, 247, 248);
+  border: none;
+  color: rgb(255, 190, 198);
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 0px;
+  padding: 0px;
+  margin-top: 0px;
+}
+.Texttoproducts:hover{
+color: rgb(252, 158, 169);
+cursor: pointer;
+
+}
+.Product1{
+    border-style: solid;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-left: 10px;
+}
+/* Who we are */
+.Ourstory{
+    background-color: rgb(237, 235, 235);
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    padding: 50px;
+}
+.Whoweare{
+    font-size: xx-large;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 5px;
+}
+.Ourstoryimage{
+width: auto;
+}
+
+.Bakingperson{
+    width: 100%;
+    height: 20%;
+    margin-top: 0;
+}
