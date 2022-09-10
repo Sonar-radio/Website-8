@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>sona's sweets</title>
     <link rel="stylesheet" href="mystyle.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
-    <head> <center><h1>a name </h1></center></head>
+    <head> <center><h1>sona's sweets</h1></center></head>
     <nav>
         <center>
             <ol>
@@ -24,9 +25,160 @@
     <div class="Horizontallinenav"></div>
     <!-- Check us out -->
     <div class="Checkusout"> <center>
-    <div>     <p class="Checkus">About this site</p>
-            <div class="Tastemore">See our progress</div>
+    <div>
+            <p class="Checkus">About this site</p>
+                <div class="Tastemore">See our progress</div>
+                <p class="Origintext">This site is a bakery website that sells home-made goods like cheescake, cinnamon rolls and pastries. The themes of this website are soft tones of brown and pink. Most sweets sold are animal themed and aim to look cute. Using cute food that looks fun to eat, we promote healthy food relationships with people that may struggle in those areas. We show that food can also be something fun when eating.</p>
+                <p class="Origintext"> Within the site we focus on informing epople on the food, and selling cute sweets.</p>
+        <div> </center>
+        </div>
+    <img src="Originsbaking.jpg" alt="" height="100%" width="100%">
+    <div class="Horizontallinenav"></div>
     <div> </center>
     </div>
-</body>
+   <!-- Contents of the page -->
+    <div class="Aboutcontents">
+        <div class="Contents"><p class="Contentnumber"> 1 </p>Wireframe</div>
+        <div class="Contents"><p class="Contentnumber"> 2 </p>Bonus Marks?</div>
+        <div class="Contents"><p class="Contentnumber"> 3 </p>Copied Code</div>
+    </div>
+    <!-- Horizontallinenav -->
+    <div class="dottedline"> </div>
+   
+    <!-- Title homepage -->
+    <div class="Checkusout"> <center>
+        <div>     <p class="Checkus">1</p>
+                <div class="Tastemore">The Wireframes</div>
+        <div> </center>
+    <!-- Horizontallinenav -->
+    <div class="dottedline"> </div>
+    <!-- Wireframe  -->
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="Homepage-wireframe.jpg" style="width: 100%;">
+      <div class="text">Homepage wireframe</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="AboutUs-Wireframe.jpg" style="width:100%">
+      <div class="text">About Us Wireframe</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="Products-Wireframe.jpg" style="width:100%">
+      <div class="text">Products Wireframe</div>
+    </div>
+    
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="Nutrition-Wireframe.jpg" style="width:100%">
+        <div class="text">Nutrition Wireframe</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="OurTeam-Wireframe.jpg" style="width:100%">
+        <div class="text">Our Team Wireframe</div>
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+  <script>
+      let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+  </script> 
+
+   <!-- Title homepage 2 -->
+   <div class="Checkusout"> <center>
+    <div>     <p class="Checkus">2</p>
+            <div class="Tastemore">Bonus Marks?</div>
+    <div> </center>
+    <!-- Horizontallinenav -->
+    <div class="dottedline"> </div>
+    
+    <!-- Bonus Mark List -->
+    <p class="Titlebonusmarks">On this site</p>
+    <div class="Bonusmarklist">
+        <li>Cohesive Colour Palette</li>
+        <li>USe of corresponding images</li>
+        <li>Button in product div that leads to product page</li>
+        <li> Cursor change on hover of products</li>
+        <li>Animation of images changing opacity on hover</li>
+        <li>Animation of gradient on hover</li>
+        <li>Modal Image on first image</li>
+        <li> divs paced on corners of the product images as labels</li>
+        <li> price listings on bottom of products</li>
+        <li> Nutrition labels telling information on product</li>
+        <li>Using pictures of myself on the Our team page</li>
+    </div>
+   <!-- Horizontallinenav -->
+   <div class="dottedline"> </div>
+    <!-- Title homepage 2 -->
+   <div class="Checkusout"> <center>
+    <div>     <p class="Checkus">3</p>
+            <div class="Tastemore">Copied Code</div>
+    <div> </center>
+    <!-- Horizontallinenav -->
+    <div class="dottedline"> </div>
+    <div class="Bonusmarklist">
+        <li> Image Carousel - https://www.w3schools.com/howto/howto_js_slideshow.asp</li>
+        <li> Modal Image - https://www.w3schools.com/howto/howto_css_modal_images.asp </li>
+        <li> Table - https://www.w3schools.com/html/html_tables.asp</li>
+    </div>
+    <div class="Horizontallinenav"></div>
+    <!-- Footer -->
+    <div class="footername">
+        <center>sona's sweets</center>
+      </div>
+      <div class="mysite">
+        <center>sonasweet@mysite</center>
+      </div>
+      <footer>
+        <center>©2022 by sona's sweets. Proudly created by swarna vankineni</center>
+      </footer>
+</body> 
 </html>

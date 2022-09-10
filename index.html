@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>sona's sweets</title>
     <link rel="stylesheet" href="mystyle.css">
+    <link rel="icon" href="favicon.ico"> 
 </head>
 <body>
-    <head> <center><h1>a name </h1></center></head>
+    <header><center><h1 class="title">sona's sweets </h1></center></head>
     <nav>
         <center>
             <ol>
@@ -36,20 +37,20 @@
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
-      <img src="July20_Pecan-and-Cinnamon-Scrolls-976x549.jpg" style="width:100%">
-      <div class="text">Caption Text</div>
+      <img src="cinnamonscrolls.jpg" style="width: 100%;">
+      <div class="text">cinnamon scrolls</div>
     </div>
   
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
       <img src="Snapseed(3).jpg" style="width:100%">
-      <div class="text">Caption Two</div>
+      <div class="text">cheesecake on a stick</div>
     </div>
   
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
       <img src="Bubble-Waffle-Dessert-Advisor-scaled.jpg" style="width:100%">
-      <div class="text">Caption Three</div>
+      <div class="text">Egg Waffles</div>
     </div>
   
     <!-- Next and previous buttons -->
@@ -96,38 +97,82 @@
   </script>
   <!-- Prudct holder -->
  <div class="Products">
-  <a><div class="Buttonalign"><button type="button" onclick="link" class="buttontoproduct"><p class="Texttoproducts">Go To Product ⮞</p></button></a></div>
+  <a href="Products.html"><div class="Buttonalign"><button type="button" onclick="link" class="buttontoproduct"><p class="Texttoproducts">Go To Products ⮞</p></button></a></div>
       <div class="Productholder">
-       
+        
         <div class="Product1">
-            Hi
+          <!-- Trigger the Modal -->
+          <img id="myImg" src="biscoffcheesecake.jpg" alt="biscoff cheesecake" style="width:100%;max-width:300px">
+          <div class="Prices"> $5.00</div>
+      </div>
+      
+        <div class="Product1">
+          <img id="myImg" src="Flowercookies.jpg" alt="Flower cookies" style="width:100%;max-width:300px">
+            <div class="Prices"> $7.50</div>
         </div>
         <div class="Product1">
-            Hi
+            <img src="Bearpuffs.jpg" alt="Bearpuffs" id="myImg">
+            <div class="Prices"> $6.00</div>
         </div>
         <div class="Product1">
-            Hi
-        </div>
-        <div class="Product1">
-            Hi
+            <img src="catdonut.jpg" alt="" id="myImg">
+            <div class="Prices"> $20.00</div>
         </div>
       </div>
       
       <div class="Productholder">
         <div class="Product1">
-            Hi
+            <img src="Dogsticks.jpg" alt="" id="myImg">
+            <div class="Prices"> $8.00</div>
         </div>
         <div class="Product1">
-            Hi
+            <img src="bunnysanga.jpg" alt="" id="myImg">
+            <div class="Prices"> $6.50</div>
         </div>
         <div class="Product1">
-            Hi
+            <img src="chickchocs.jpg" alt="" width="200%" height="100%" id="myImg">
+            <div class="Prices"> $5.50</div>
         </div>
         <div class="Product1">
-            Hi
+            <img src="bearcup.jpg" alt="" width="100%" id="myImg">
+            <div class="Prices"> $2.00</div>
         </div>
  </div>
-    
+ <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+
+</div>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("myImg");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+</script>
     <!-- Our story -->
     <div class="Ourstory">
         <center>
@@ -138,5 +183,42 @@
        
     </div>
     <div class="Ourstoryimage"> <img src="Baking.jpg" alt="" class="Bakingperson"></div>
+    <div>
+      <!-- Give us a shout -->
+      <div class="Giveusashout">
+        <center><p class="Shout">Give us a Shout</p></center>
+        
+        <div class="Flexforsearch">
+          <input name="name" id="input_content-comp-l7o2qxrv" class="Namesearch" type="text" placeholder="Name" aria-required="false" maxlength="100" aria-label="Name" value="" aria-invalid="true">
+          <input name="email" id="input_content-comp-l7o2qxsf1" class="emailsearch" type="email" placeholder="Email" required="" aria-required="true" pattern="^.+@.+\.[a-zA-Z]{2,63}$" maxlength="250" aria-label="Email" value="" aria-invalid="false">
+        </div>
+        <center><textarea id="textarea_comp-l7o2qxsq" class="message" placeholder="Type your message here..." aria-required="false" aria-invalid="true"></textarea></center>
+        <center><a href="swarna.vankineni@education.nsw.gov.au"><button aria-disabled="false" data-testid="buttonElement" class="submit"><span class="_1Qjd7">Submit</span></button></a></center>
+      </div>
+    </div>
+    <!-- Map of where to find -->
+    <p>
+      <div class="Containmap">
+        <img src="Candyland.jpg" alt="" class="Map">
+       <center>
+          <div class="Directions">
+            <p class="Wheretofind">Where to Find us</p>
+            <p>666 Cheesecake Street, Cakebox Waffles, Candlyland 1234</p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis dolores praesentium placeat distinctio reprehenderit voluptate, laudantium atque nisi voluptatibus quisquam similique qui blanditiis delectus et fuga autem consequatur temporibus quo!
+          </div>
+       </center>
+      </div>
+    </p>
+   <!-- footer -->
+    <div class="Horizontallinenav"></div>
+    <div class="footername">
+      <center>sona's sweets</center>
+    </div>
+    <div class="mysite">
+      <center>sonasweet@mysite</center>
+    </div>
+    <footer>
+      <center>©2022 by sona's sweets. Proudly created by swarna vankineni</center>
+    </footer>
 </body>
 </html>
